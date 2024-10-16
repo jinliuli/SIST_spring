@@ -1,0 +1,16 @@
+package com.test.begin.di2;
+
+public class Service {
+	
+	public void work() {
+		
+		//기존 방식
+		//Hong hong = new Hong();
+		//hong.coding();
+		
+		//DI
+		hong.coding();
+		
+	}
+	
+}

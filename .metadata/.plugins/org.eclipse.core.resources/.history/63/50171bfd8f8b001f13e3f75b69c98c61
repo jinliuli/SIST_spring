@@ -1,0 +1,26 @@
+package com.test.begin.aop;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		//주업무 객체
+		Memo memo = new MemoImpl();
+		
+		//글쓰기
+		memo.add("스프링 수업중..");
+		
+		//글읽기
+		String content = memo.read(10);
+		System.out.println(content);
+		
+		//글수정
+		boolean result = memo.edit(10, "수정한 내용");
+		System.out.println(result);
+		
+		//글삭제
+		result = memo.del(10);
+		System.out.println(result);
+	}
+
+}

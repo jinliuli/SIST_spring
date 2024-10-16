@@ -1,0 +1,32 @@
+package com.test.begin.aop;
+
+import java.util.Calendar;
+
+//보조 업무 객체
+public class Logger {
+	
+	//보조 업무
+	public void log(String message) {
+		Calendar now = Calendar.getInstance();
+		System.out.printf("[LOG]%tF %tT > %s\n", now, now, message);
+	}
+	
+	//보조 업무 > After Advice
+	public void m1() {
+		System.out.println("➡️➡️보조 업무를 실행합니다.");
+	}
+	
+	
+	//보조 업무 > Before Advice
+	public void m2() {
+		System.out.println("익명 사용자를 내보냅니다.");
+	}
+	
+	//보조 업무 > Around Advice
+	public void m3() {
+		
+		//보조업무 > 주업무 > 보조업무
+		System.out.println();
+	}
+	
+}

@@ -1,0 +1,23 @@
+package com.test.begin.di2;
+
+public class Service {
+	
+	private Hong hong;
+	
+	//내가 필요해서 내가 만듦
+	public Service(Hong hong) {
+		this.hong = hong;
+	}
+	
+	public void work() {
+		
+		//기존 방식
+		//Hong hong = new Hong();
+		//hong.coding();
+		
+		//DI
+		hong.coding();
+		
+	}
+	
+}
