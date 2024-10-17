@@ -21,7 +21,12 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
+	
+	
 	<context:component-scan base-package="com.test.web" />
+	<context:component-scan base-package="com.test.member" />
+
+
 	
 	<!-- 컨트롤러의 가상주소 > 컨트롤러를 스프링 빈으로 선언 -->
 	<beans:bean class="com.test.web.controller.Ex01Controller" name="/ex01.do"></beans:bean>
