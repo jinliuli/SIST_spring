@@ -15,13 +15,33 @@
 	<!-- ex05.jsp -->
 	<h1>입력</h1>
 	
-	<form method="POST" action="/web/ex05ok.do">
+	<form method="POST" action="/web/ex05ok.do"> 
 	<div>
-		<input type="text" name="num">
-	</div>
+		<input type="text" name="data">
+	</div> 
 	<div>
 		<input type="submit" value="보내기">
 	</div>
+	</form>
+	
+	<hr>
+	
+	<form method="POST" action="/web/ex05ok.do">
+	<div><input type="text" name="name"></div>
+	<div><input type="text" name="age"></div>
+	<div><input type="text" name="address"></div>
+	<div><input type="submit" value="보내기"></div>
+	
+	<input type="hidden" name="seq" value="10">
+	</form>
+	
+	<hr>
+	
+	<form method="POST" action="/web/ex05ok.do">
+	<div><input type="checkbox" name="cb" value="java">자바</div>
+	<div><input type="checkbox" name="cb" value="python">파이썬</div>
+	<div><input type="checkbox" name="cb" value="basic">베이직</div>
+	<div><input type="submit" value="보내기"></div>
 	</form>
 	
 	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
