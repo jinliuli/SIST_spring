@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "https://mybatis.org/dtd/mybatis-3-config.dtd">
+ 
+<configuration>
+
+	<!-- 타입에 대한 별칭 만들기 -->
+	<typeAliases>
+		<typeAlias type="com.test.code.dto.CodeDTO" alias="dto"/>
+	</typeAliases>
+
+</configuration> 
+

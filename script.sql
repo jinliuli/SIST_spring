@@ -32,3 +32,5 @@ insert into tblAddress values (seqAddress.nextVal, '독수리', 3, '서울시 �
 commit;
 
 select * from tblAddress;
+
+select max(seq) from tblAddress;
