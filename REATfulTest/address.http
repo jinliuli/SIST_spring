@@ -1,0 +1,67 @@
+
+POST http://localhost:8090/rest/address
+Content-Type: application/json
+
+{
+    "name": "똥강아지",
+    "age": 22,
+    "address": "우리집",
+    "gender": "m"
+}
+
+###
+
+GET http://localhost:8090/rest/address
+
+###
+
+PUT http://localhost:8090/rest/address/49
+Content-Type: application/json
+
+{
+    "name": "호호호",
+    "age": 7,
+    "address": "제주도",
+    "gender": "f"
+}
+
+###
+DELETE http://localhost:8090/rest/address/48
+
+###
+
+GET http://localhost:8090/rest/address/우리
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###
+
+GET http://localhost:8090/mybatis/address
+
+###
+
+GET http://localhost:8090/mybatis/address?seq=1
