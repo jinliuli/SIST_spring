@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="NonTilesTest"/>
+<aop-project name="WebSocketTes"/>
 <aop-project name="Code"/>
 <aop-project name="MyBatisSimpleTest"/>
 <aop-project name="TilesTest"/>
