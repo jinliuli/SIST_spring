@@ -6,14 +6,15 @@
 <aop-project name="MyBatisSimpleTest"/>
 <aop-project name="TilesTest"/>
 <aop-project name="MyBatisTest"/>
+<aop-project name="SecurityTest"/>
 <aop-project name="Hello"/>
 <aop-project name="WebTest"/>
+<aop-project name="DocumentTest"/>
 <aop-project name="BeginTest">
 <aspect-definition advice-class-name="com.test.begin.aop.Logger" advice-method-name="m5" advice-type="AFTER_THROWING" aspect-end-line-number="86" aspect-name="logger" aspect-start-line-number="86" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/BeginTest/src/main/java/com/test/begin/aop/memo.xml" pointcut-expression="execution(public String com.test.begin.aop.MemoImpl.read(int))" proxy-target-class="false" throwing="e">
 <aop-reference advice-type="AFTER_THROWING" bean="1:BeansModel|2:BeginTest|3:src/main/java/com/test/begin/aop/memo.xml|7:beans:7|8:memo:19" bean-file="/BeginTest/src/main/java/com/test/begin/aop/memo.xml" bean-start-line="19" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/BeginTest/src/main/java/com/test/begin/aop/memo.xml" source="=BeginTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.begin.aop{Logger.java[Logger~m5~QException;" source-start-line="65" target="=BeginTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.begin.aop{MemoImpl.java[MemoImpl~read~I" target-start-line="27"/>
 </aspect-definition>
 </aop-project>
-<aop-project name="DocumentTest"/>
 <aop-project name="FileTest"/>
 <aop-project name="AOPTest">
 <aspect-definition advice-class-name="com.test.aop.aspect.Logger" advice-method-name="m1" advice-type="AFTER" aspect-end-line-number="26" aspect-name="logger" aspect-start-line-number="26" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/AOPTest/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" pointcut-expression="pc1()" proxy-target-class="false">
