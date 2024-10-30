@@ -1,0 +1,110 @@
+<!-- 
+
+Java Document(javadoc.exe)
+- 전체 프로젝트 문서
+- 핵심 업무(웹페이지 5~6장) 충실 300% + 나머지 업무(X)
+
+REST API Document
+- Ajax 응답용
+- 개발 문서(핵심 업무 위주)
+- 스프링 > Swagger
+
+상황
+- REST API 구현 > REST API Document 생성 > Project 구현 + REST API 사용(+Document 열람)
+
+
+1. 새 프로젝트 > Ajax 응답용 Project
+- New > Spring Legacy Project
+- Project name: "AjaxServer"
+- Templates: Spring MVC Project
+- Enter a top-level-package: "com.test.ajax"
+
+1. 새 프로젝트 > Spring MVC Project
+- New > Spring Legacy Project
+- Project name: "ProjectServer"
+- Templates: Spring MVC Project
+- Enter a top-level-package: "com.test.project"
+
+2. 스프링/자바 버전 변경하기
+- pom.xml
+	- <org.springframework-version>5.0.7.RELEASE</org.springframework-version>
+	- <java-version>11</java-version>
+	- <source>11</source>
+	- <target>11</target>
+	- 패키지 탐색기 > 우클릭 > Properties > Project Facets > Java > 11
+
+3. 서블릿/JSP 버전 변경하기
+- pom.xml
+	<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>javax.servlet-api</artifactId>
+		<version>3.1.0</version>
+		<scope>provided</scope>
+	</dependency>
+	<dependency>
+		<groupId>javax.servlet.jsp</groupId>
+		<artifactId>javax.servlet.jsp-api</artifactId>
+		<version>2.3.3</version>
+		<scope>provided</scope>
+	</dependency>
+
+
+AjaxServer + Swagger 구축
+1. 의존성 추가
+- pom.xml
+
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger2</artifactId>
+    <version>2.9.2</version>
+</dependency>
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger-ui</artifactId>
+    <version>2.9.2</version>
+</dependency>
+
+2. 설정 파일
+- "com.test.rest.config" > "SwaggerConfig.java"
+
+3. servlet-context.xml
+
+4. 실행
+- http://localhost:8090/ajax/swagger-ui.html
+
+5. 도움말 작성
+
+============================================
+
+ProjectServer
+- "com.test.project.controller" > "MainController.java"
+- views > "main.jsp"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->

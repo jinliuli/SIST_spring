@@ -5,9 +5,12 @@
 <aop-project name="MyBatisSimpleTest"/>
 <aop-project name="Code"/>
 <aop-project name="TilesTest"/>
+<aop-project name="AjaxServer"/>
 <aop-project name="MyBatisTest"/>
+<aop-project name="RESTDocTest"/>
 <aop-project name="SecurityTest"/>
 <aop-project name="Hello"/>
+<aop-project name="ProjectServer"/>
 <aop-project name="WebTest"/>
 <aop-project name="DocumentTest"/>
 <aop-project name="BeginTest">
